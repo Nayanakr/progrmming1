@@ -5,3 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multiples Sum</title>
     <script>
+        function doIt() {
+            // Get the values of a, b, and n from the input boxes
+            let a = parseInt(document.getElementById("a").value);
+            let b = parseInt(document.getElementById("b").value);
+            let n = parseInt(document.getElementById("n").value);
+
+            let sum = 0;
+            // Loop through numbers below n
+            for (let i = 1; i < n; i++) {
+                // If the number is divisible by a or b, add it to the sum
+                if (i % a === 0 || i % b === 0) {
+                    sum += i;
+                }
+            }
+            
+
+
